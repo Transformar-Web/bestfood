@@ -1,0 +1,303 @@
+// Estas importaciones son para una eventual modularización
+@import '_variables.scss';
+@import '_mixins.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+// font-family: 'Alfa Slab One', cursive;
+
+// este contenedor contiene la estructura de estilos definidos del header
+.container-header{
+    width: 100%;
+    height: 95vh;
+    background-image: url('../img/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+
+    // este after lo utilizo para aplicar un filtro oscuro rgba al header 
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $colorTransparent;
+        width: 100%;
+        height: 95vh;
+        z-index: 0;
+    }
+}
+
+// este el nav definido y es muy importnte guiarse por la estructura html
+// para entender muy bien la estructuras de estilos css
+// contien un position relative y z-index 10 por que tiene que anteponerse
+// al z-index after del contenedor header 
+.nav{
+  position: relative;
+  z-index: 10;
+
+
+  // barra de navegegacion para moviles  
+    &__barra{
+        width: 100%;
+        background-color: $colorTransparent2;
+        padding: $paddingTopBottom;
+        @include flexDirecion();
+    }
+
+    &__title{
+        color: $color3;
+        margin: $marginAll2;
+        font-size: 1.5rem;
+        font-family: 'Alfa Slab One', cursive;
+    }
+   // ..................................................
+   // este es el menu como tal donde estan las secciones del sitio    
+    &__lista{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $colorTransparent2;
+        box-sizing: border-box;
+    }
+    
+    &__nuevo--active{
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s ease-in;
+    }
+    
+
+    &__li{
+        padding: $paddingTopBottom2;
+        list-style: none;
+    }
+
+    &__li:hover{
+        background-color: $color4;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    &__enlace{
+        color: $color1;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-family: $fuenteText;
+    }
+}
+
+// Este es el contenido que se muestra en el header fijarse bien en la estructura html
+.contenido-header{
+  width: 95%;
+  height: auto;
+  margin-top: 20px;
+
+  @include centrarAbsolute();
+  z-index: 1;
+
+
+  &__h2{
+      color: $color1;
+      text-align: center;
+      padding: $paddingTopBottom;
+      font-family: 'Fredoka One', cursive;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+
+      .span{
+          color: $color4;
+          font-family: 'Fredoka One', cursive;
+      }
+  }
+
+  &__p{
+      margin-top: 10px;
+      color: $color1;
+      padding: $paddingLeftRight;
+      opacity: 0.8;
+    //   text-align: center;
+      background: $colorTransparent;
+      font-size: 19px;
+  }
+
+  &__btn{
+      @include Btn($color4,$color1,$color4);
+      font-weight: bold;
+      font-size: 1.3rem;
+      border-radius: 12px;
+      background-color: rgba(0,0,0,0.5);
+      color: $color3;
+      font-family: $fuenteText;
+  }
+
+//   &__btn:hover{
+//       background-color: rgba(0,0,0,0.8);
+//       color: $color3;
+//   }
+   
+}
+
+//recuerda que no se repiten los estilos en las medias queries se aplican
+// los estilos en cascadas, se modifica cierta parte del codigo para cada dispositivo
+// media querie que se adapta a dispositivos tablets
+@media screen and (min-width:500px){
+
+    .container-header{
+        width: 100%;
+        height: 70vh;
+    
+        // este after lo utilizo para aplicar un filtro oscuro rgba al header 
+        &::after{
+            content: '';
+            width: 100%;
+            height: 70vh;
+        }
+    }
+    
+        .contenido-header{
+            width: 95%;
+            height: auto;
+        
+            @include centrarAbsolute();
+            z-index: 1;
+        
+        
+            &__h2{
+                color: $color1;
+                text-align: center;
+                padding: $paddingTopBottom2;
+                font-size: 3.3rem;
+        
+                .span{
+                    color: $color4;
+                }
+            }
+        
+            &__p{
+                margin-top: 10px;
+                color: $color1;
+                padding: $paddingAll2;
+                text-align: center;
+                opacity: 0.8;
+                font-size: 1.3rem;
+                background: $colorTransparent;
+            }
+        
+            // &__btn{
+            //     @include Btn(none,$color1,$color4);
+            // }
+    }
+}
+
+//recuerda que no se repiten los estilos en las medias queries se aplican
+// los estilos en cascadas, se modifica cierta parte del codigo para cada dispositivo
+// media querie para que se adpate a entornos de escritorios y laptops
+@media screen and (min-width:1025px){
+
+    .container-header{
+        width: 100%;
+        height: 100vh;
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $colorTransparent;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+        }
+    }
+
+        .nav{
+            width: 100%;
+            height: 80px;
+            position: relative;
+            background-color:transparent;
+            z-index: 10;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        
+            &__barra{
+                background-color: rgba(0,0,0,0.3);
+                padding: none;
+                @include flexDirecion();
+                width: 30%;
+            }
+        
+            &__title{
+                color: $color4;
+                margin: $marginAll2;
+                font-size: 1.7rem;
+            }
+
+            &__btn--active{
+                visibility: hidden;
+                opacity: 0;
+            }
+            
+            &__lista{
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: none;
+                text-align: left;
+                background-color: rgba(0,0,0,0.3);
+            }
+            
+            &__nuevo--active{
+                visibility: visible;
+                opacity: 1;
+                transition: .4s ease-in;
+            }
+            
+        
+            &__li{
+                // background-color: $color4;
+                padding: 10px;
+                list-style: none;
+                margin: 5px;
+                border-top: none ;
+                text-align: center;
+            }
+        
+            &__li:hover{
+                background-color: $color4;
+                border-radius: 10px;
+                font-weight: bold;
+                width: auto;
+            }
+        
+            &__enlace{
+                color: $color1;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }  
+        
+     .contenido-header{
+        &__p{
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+
+    }
+
+}

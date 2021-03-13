@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Transformar Web">
+    <meta name="description" content="Restaurante BESTFOOD sirviendo las mejores comidas gastronómicas que sobrepasan las expectativas de todos nuestros clientes.">
+    <meta name="keywords" content="comida,postres,restaurante">
+    <title>Restaurante BESTFOOD</title>
+    <link rel="icon" type="image/svg" href="img/cutlery.svg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/section1.css">
+    <link rel="stylesheet" href="css/section2.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
+    <link rel="stylesheet" href="css/section3.css">
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/section4.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <script src="https://kit.fontawesome.com/ed962a94c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="container-header">
+        
+        <nav class="nav">
+            <div class="nav__barra">
+                <h1 class="nav__title">BEST FOOD</h1>
+
+                 <button class="hamburger hamburger--collapse-r nav__btn--active" 
+                 type="button" id="btnMenu">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>       
+            </div>
+            <ul class="nav__lista nav__nuevo--active">
+                <li class="nav__li"><a class="nav__enlace" href="index.html">Inicio</a></li>
+                <li class="nav__li"><a class="nav__enlace" href="#Menu">Menú</a></li>
+                <li class="nav__li"><a class="nav__enlace" href="#Nosotros">Sobre nosotros</a></li>
+                <li class="nav__li"><a class="nav__enlace" href="#Ubicacion">Ubicación</a></li>
+                <li class="nav__li"><a class="nav__enlace" href="#Contact">Contactanos</a></li>
+             </ul>
+        </nav>
+
+        <div class="contenido-header">
+           <h2 class="contenido-header__h2">
+               Restaurante <span class="span">BEST FOOD</span>
+           </h2>
+            <p class="contenido-header__p">
+                Somos un restaurante especializado en las mejores comidas, nuestro sabor satisface a miles de clientes cada año esto debido a la elaboración de comidas gastronómicas, que suelen ser muy consumidas en gran parte por personas que siempre tratan de satisfacer su paladar con comidas de calidad. 
+            </p>
+             
+            <a href="#especialidades" class="contenido-header__btn">Especialidades</a>
+        </div>     
+    </header>
+
+    <section class="section1">
+        <div class="subSection1">
+              <div class="subSection1__conte1">
+                   <p class="subSection1__title">
+                       ¡Nuestro Sabor es Inigualable!
+                    </p>
+                    <p class="subSection1__parrafo">
+                        El buen sabor forma parte de nosotros como una ideología que siempre debe destacar de cara a los clientes. Las múltiples especialidades que ponemos a la orden del día evidencian y resaltan lo mejor de nosotros en cada platillo que servimos, restaurante BestFood perfecciona el sabor de las comidas porque cuenta con los mejores chefs de primer nivel.  
+                         <br><br>
+                        Cada año se nota el crecimiento exponencial y las muy buenas reseñas que tiene nuestro restaurante BestFood.
+                    </p>
+              </div>
+
+              <div class="subSection1__conte2">
+                 <img src="img/picadillo.jpg" class="subSection1__img">
+              </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="subSection2">
+           <!-- sección que muestra las comidas -->
+            <div class="subSection2__comidas" id="Menu">
+              <p class="subSection2__title">Comidas Best Food</p>
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/combo3.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/combo2.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/taco.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/sandwich.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/burrito.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/ensalada.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/desayuno.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/sopa.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/pescado.jpg" class="glide__img">
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+               </div>
+            <!--.................................................  -->
+            <!-- sección que muestra los postres -->
+            <div class="subSection2__postres">
+                <p class="subSection2__title">Postres Best Food</p>
+
+                   <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/cake-choco.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/hotcakes.jpg" class="glide__img">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/tiramisu.jpg" class="glide__img">
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button> 
+                    </div>
+
+                      <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                      </div>
+                  </div>
+                
+            </div>
+           <!-- ................................................... -->
+
+           <!-- estructura del menú -->
+            <div class="subSection2__containerMenu" id="especialidades">
+                    <h3 class="subSection2__h3">Conoce Nuestros Precios</h3>                
+                      <div class="subSection2__select">
+                          <div class="subSection2__selectItem subSection2__selectItem--activeShow" data-atributo="todo">
+                              Ver Todo
+                          </div>
+                          <div class="subSection2__selectItem" data-atributo="platillos">
+                            Platillos
+                          </div>
+                          <div class="subSection2__selectItem" data-atributo="postres">
+                            Postres
+                          </div>
+                          <div class="subSection2__selectItem" data-atributo="ensaladas">
+                            Ensaladas
+                          </div>
+                      </div>
+            </div>
+         <!-- ....................................................... -->
+            <div class="subSection2__contenido" >
+
+                <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Hamburguesa y papas fritas</p>
+                   <span class="subSection2__span">L. 280</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Platillo de carne y ensalada</p>
+                   <span class="subSection2__span">L. 240</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Tacos Mexicanos Picantes</p>
+                   <span class="subSection2__span">L. 180</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Sopa Casera de res</p>
+                   <span class="subSection2__span">L. 190</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="postres">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Pastel crema de avellana</p>
+                   <span class="subSection2__span">L. 110</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="ensaladas">
+                   <i class="fas fa-medal subSection2__icon"></i>
+                   <p class="subSection2__tipoFood">Ensalada vegana</p>
+                   <span class="subSection2__span">L. 105</span>
+                </div>
+
+                <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Desayuno completo especial</p>
+                    <span class="subSection2__span">L. 230</span>
+                 </div>
+
+                 <div class="subSection2__contenidoItem" data-id="ensaladas">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Ensalada mediterranea</p>
+                    <span class="subSection2__span">L. 125</span>
+                 </div>
+
+                 <div class="subSection2__contenidoItem" data-id="postres">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Pay de manzana</p>
+                    <span class="subSection2__span">L. 125</span>
+                 </div>
+                 
+                 <div class="subSection2__contenidoItem" data-id="postres">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Postre Tiramisu</p>
+                    <span class="subSection2__span">L. 185</span>
+                 </div>
+
+                 <div class="subSection2__contenidoItem" data-id="platillos">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Filete de Pescado</p>
+                    <span class="subSection2__span">L. 230</span>
+                 </div>
+
+                 <div class="subSection2__contenidoItem" data-id="ensaladas">
+                    <i class="fas fa-medal subSection2__icon"></i>
+                    <p class="subSection2__tipoFood">Ensalada Griega</p>
+                    <span class="subSection2__span">L. 180</span>
+                 </div>
+
+
+            </div>
+           <!-- .......................................................-->
+        </div>
+    </section>
+    <!-- final de la sección2 ...........................................-->
+
+    <!-- nueva sección -->
+        
+     <section class="section3">
+       
+        <div class="subSection3">
+            <!-- parte 1 -->
+            <!-- ............................................................ -->
+             <div class="subSection3__banner" id="Nosotros">Conoce Más Sobre Nosotros</div>
+             <article class="subSection3__article">
+                
+                  <div class="subSection3__articleItem">
+                    <h5 class="subSection3__num">01</h5>
+                      <p class="subSection3__title">Misión</p>
+                      <p class="subSection3__parrafo">Demostrar a todos nuestros clientes que cada platillo de comida que servimos sea disfrutado por aquellos que siempre gustan de sabores gastronómicos especiales con la más alta calidad. 
+                      </p>
+                  </div>
+                  <div class="subSection3__articleItem">
+                    <h5 class="subSection3__num">02</h5>
+                    <p class="subSection3__title">Visión</p>
+                    <p class="subSection3__parrafo"> Ser el mejor restaurante posicionado en nuestro pais, asi mismo ampliar muchos establecimientos que nos permitan servir los mejores platillos hechos con un sabor inigualable. </p>
+                </div>
+                <div class="subSection3__articleItem">
+                    <h5 class="subSection3__num">03</h5>
+                    <p  class="subSection3__title">Concepto</p >
+                    <p class="subSection3__parrafo">Ofrecer novedosos platillos que gusten a todas las personas que se atreven a probar de nuetros sabores inigualables, ofrecer un concepto gastronomico diferente a los demás.</p>
+                </div>
+             </article>
+        </div>
+     <!-- ................................................................................ -->
+         
+          <div class="subSection3__fondo" >
+                <div class="subSection3__containerPerson" id="sectionFondo">
+                    <div class="subSection3__person"></div>
+                        <div class="subSection3__description">
+                        <b>Elisabeth Rodriguez</b> <br>
+                        <b>Propietaria de Restaurante BEST FOOD</b></div>
+                        <p class="subSection3__mensaje">
+                            Ser Propietaria de mi propio negocio es una de las facetas más importantes de mi vida, trabajar con mis colaboradores y empleados para ofrecer a nuestros clientes platillos diferentes que hacen destacar la marca del restaurante, esto en beneficio siempre para todos nuestros clientes que siempre buscan opciones alimenticias que satisfagan su paladar con platillos exquisitos y gastronómicos. 
+                        </p>
+                </div>
+          </div>
+<!-- ....................................................................................... -->
+            <!-- estructura de las cards -->
+            
+            <h3 class="subSection3__titleChef">Nuestros Chefs Restaurante 
+            <span class="remarcar">BEST FOOD</span></h3>
+
+          <div class="subSection3__containerCard">
+
+               <div class="subSection3__cardItem">
+                   <img src="img/chef2.jpeg" class="subSection3__cardImg">
+                   <div class="subSection3__Chefs">
+                       <p class="subSection3__chefName">Mauricio Gallardo</p>
+                        <div class="subSection3__containerSocial">
+                             <img src="img/social1.png" class="subSection3__socialChef">
+                             <img src="img/social2.png" class="subSection3__socialChef">
+                             <img src="img/social3.png" class="subSection3__socialChef">
+                        </div>
+                   </div>
+               </div>
+                
+               <div class="subSection3__cardItem">
+                <img src="img/chef1.jpeg" class="subSection3__cardImg">
+                <div class="subSection3__Chefs">
+                    <p class="subSection3__chefName">Jorge Vergara</p>
+                     <div class="subSection3__containerSocial">
+                          <img src="img/social1.png" class="subSection3__socialChef">
+                          <img src="img/social2.png" class="subSection3__socialChef">
+                          <img src="img/social3.png" class="subSection3__socialChef">
+                     </div>
+                </div>
+              </div>
+
+            <div class="subSection3__cardItem">
+                <img src="img/chef3.jpeg" class="subSection3__cardImg">
+                <div class="subSection3__Chefs">
+                    <p class="subSection3__chefName">Leandro Castro</p>
+                     <div class="subSection3__containerSocial">
+                          <img src="img/social1.png" class="subSection3__socialChef">
+                          <img src="img/social2.png" class="subSection3__socialChef">
+                          <img src="img/social3.png" class="subSection3__socialChef">
+                     </div>
+                </div>
+            </div>
+              
+          </div>
+     </section>
+    <!-- ..................................................... -->
+
+    <!-- Seccion 4 -->
+     <section class="section4">
+       
+        <div class="subSection4" id="Ubicacion">
+            <h4 class="subSection4__h4">Ubicación</h4>
+            <p style="text-align: center; color: #333;">La ubicación de este sitio web es ficticia, esto debido a que el contenido de la web está adaptado para ser una demostración de diseño y rendimiento. </p>
+        <iframe class="subSection4__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.606719177047!2d-87.18170278564999!3d14.100378190122548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fa326da9c4fab%3A0xcc904d27d8633f76!2sBlvrd%20Moraz%C3%A1n%2C%20Tegucigalpa!5e0!3m2!1ses!2shn!4v1592745250246!5m2!1ses!2shn" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <h3 class="subSection4__title" id="Contact">Contactanos</h3>
+         
+        <div class="subSection4__containerForm" >
+
+             <div class="subSection4__nav">
+                    <div class="subSection4__navItem">
+                    <img src="img/001-open.png" class="subSection4__navIcon">
+                    <p class="subSection4__navText">lunes a sabados 10:30 AM - 8:00 PM</p>
+                    </div>
+                    <div class="subSection4__navItem">
+                    <img src="img/003-email.png" class="subSection4__navIcon">
+                    <p class="subSection4__navText">bestfood@gamil.com</p></div>
+                    <div class="subSection4__navItem">
+                    <img src="img/002-phone-call.png" class="subSection4__navIcon">
+                    <p class="subSection4__navText">+504 8930-3657</div>
+             </div>
+
+             <form class="subSection4__formulario" action="index.html" method="POST" >
+                 <div class="subSection4__containerInput">
+                    <input type="text" class="subSection4__input" placeholder="Ingresar su Nombre" required>
+                    <input type="email" class="subSection4__input" placeholder="Ingresar su Email" required>
+                </div>
+
+                <textarea class="subSection4__textarea" placeholder="Escriba el mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="subSection4__btn">
+             </form>
+        </div>
+  
+        </div>
+     </section>
+     <!-- final de la sección -------------------------------- -->
+
+     <div class="showBanner">
+         <div class="imagen--show">
+             <img src="img/cancel.svg" class="imgClose">
+         </div>
+     </div>
+
+     <!-- ---------------------------------------------------- -->
+
+     <div class="fixedContainer">
+        <a href="https://wa.me/+50489303657? " class="fixedContainer__contentWhatsApp" target="_blank">
+            <img src="img/whatsapp.svg" class="fixedContainer__icons">
+        </a>
+     </div>
+
+     <!-- footer -------------------------------- -->
+     <footer class="footer">
+           <p class="footer__title">Siguenos en las Redes Sociales</p>
+           <p class="footer__p">Conectate y ponte al día con nosotros en las redes sociales.</p>
+
+           <div class="footer__containerIcons">
+                <a href="https://es-la.facebook.com/">
+                    <img src="img/Rectangle 43.png" class="footer__icon">
+                </a>
+                <a href="https://web.whatsapp.com/">
+                    <img src="img/Rectangle 44.png" class="footer__icon">
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la">
+                    <img src="img/Rectangle 45.png" class="footer__icon">
+                </a>
+                <a href="https://web.telegram.org/#/login">
+                    <img src="img/Rectangle 46.png" class="footer__icon">
+                </a>
+                <a href="https://www.youtube.com/" >
+                    <img src="img/Rectangle 47.png" class="footer__icon">
+                </a>
+           </div>
+
+           <p class="footer__derechos">© Derechos reservados transformarweb.com</p>
+     </footer>
+    <!-- final del footer -------------------------------- -->
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/eventos.js"></script>
+    <script src="js/glide.min.js"></script>
+    <script src="js/librarie.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,207 @@
+.section4 {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: #fefefe;
+}
+
+.subSection4 {
+  width: 97%;
+  height: auto;
+  margin: 20px auto;
+}
+.subSection4__mapa {
+  width: 100%;
+  height: 250px;
+  margin-top: 25px;
+}
+.subSection4__h4 {
+  font-size: 1.4rem;
+  padding: 5px 0;
+  font-weight: lighter;
+  text-align: center;
+}
+.subSection4__title {
+  text-align: center;
+  color: rgba(245, 207, 40, 0.993);
+  font-size: 1.6rem;
+  padding: 30px 0;
+}
+.subSection4__containerForm {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -1px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+.subSection4__nav {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.subSection4__navItem {
+  width: 30%;
+  height: auto;
+}
+.subSection4__navIcon {
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin: auto;
+  margin-right: auto;
+}
+.subSection4__navText {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 5px;
+}
+.subSection4__formulario {
+  width: 100%;
+  height: auto;
+}
+.subSection4__containerInput {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subSection4__input {
+  width: 90%;
+  height: 40px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  margin: 10px;
+  text-align: center;
+}
+.subSection4__textarea {
+  width: 90%;
+  height: 100px;
+  display: block;
+  margin: 10px auto;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+}
+.subSection4__btn {
+  background: none;
+  padding: 10px 20px;
+  border: 3px solid none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 20px auto;
+  display: block;
+  background-color: rgba(245, 207, 40, 0.993);
+  color: white;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 250px;
+}
+
+@media screen and (min-width: 500px) {
+  .subSection4 {
+    background-color: #fdfdfd;
+  }
+  .subSection4__mapa {
+    width: 100%;
+    height: 350px;
+  }
+  .subSection4__containerForm {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    background-color: white;
+  }
+  .subSection4__containerInput {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: none;
+  }
+  .subSection4__input {
+    width: 50%;
+    height: 45px;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    margin: 10px;
+    text-align: center;
+  }
+  .subSection4__textarea {
+    width: 90%;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .subSection4__mapa {
+    width: 100%;
+    height: 500px;
+  }
+  .subSection4__h4 {
+    font-size: 2rem;
+    padding: 5px 0;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .subSection4__title {
+    text-align: center;
+    color: rgba(245, 207, 40, 0.993);
+    font-size: 2rem;
+    padding: 30px 0;
+    margin-top: 30px;
+  }
+  .subSection4__formulario {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+  }
+  .subSection4__containerForm {
+    width: 55%;
+    height: auto;
+    margin: auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    background-color: #fefefe;
+  }
+  .subSection4__btn {
+    background: none;
+    padding: 10px 20px;
+    border: 3px solid none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 20px auto;
+    display: block;
+    background-color: rgba(245, 207, 40, 0.993);
+    color: white;
+    width: 180px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=section4.css.map */

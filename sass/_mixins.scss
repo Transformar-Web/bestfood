@@ -1,0 +1,59 @@
+@mixin centrarAbsolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// este centrado se le aplica al contenedor padre.
+@mixin centrarFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centrarMargin {
+    display: block;
+    margin: auto;
+    margin-right: auto;
+}
+
+@mixin Btn($bg,$col,$bor) {
+   background: none;
+   padding: 10px 20px;
+   border: 3px solid $bor;
+   font-weight: bold;
+   font-size: 1.2rem;
+   cursor: pointer;
+   border-radius: 25px;
+   margin: 20px auto;
+   display: block;
+   background-color: $bg;
+   color: $col;
+   width: 180px;
+   height: auto;
+   text-align: center;
+//    text-transform: uppercase;
+   text-decoration: none;
+}
+
+
+@mixin flexDirecion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+@mixin general {
+    // margin: 0;
+    padding: 0;
+}
+
+@mixin backgroundImage($url){
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+//   background-attachment: fixed;
+}
+

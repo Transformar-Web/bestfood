@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section1 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #fcfcfc;
+  padding: 30px 0;
+}
+
+.subSection1 {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.subSection1__conte1 {
+  width: 100%;
+  height: auto;
+}
+.subSection1__title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  color: rgba(245, 207, 40, 0.993);
+  font-weight: bold;
+}
+.subSection1__parrafo {
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  padding: 0 15px;
+  color: #333;
+}
+.subSection1__conte2 {
+  width: 100%;
+  height: auto;
+}
+.subSection1__img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  clip-path: inset(0 0 10px 0 round 0 0 80px 0);
+}
+
+@media screen and (min-width: 500px) {
+  .subSection1 {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .subSection1__conte1 {
+    width: 50%;
+    height: auto;
+    order: 2;
+  }
+  .subSection1__conte2 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    order: 1;
+  }
+  .subSection1__img {
+    width: 320px;
+    height: 330px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    clip-path: inset(0 0 10px 0 round 0 0 100px 0);
+  }
+}
+@media screen and (min-width: 950px) {
+  .subSection1 {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .subSection1__conte1 {
+    width: 50%;
+    height: auto;
+    order: 2;
+    padding: 25px 0;
+  }
+  .subSection1__parrafo {
+    width: 90%;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  .subSection1__conte2 {
+    width: 50%;
+    height: auto;
+    position: relative;
+    order: 1;
+  }
+  .subSection1__img {
+    width: 370px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: inset(0 0 10px 0 round 0 0 100px 0);
+  }
+}
+
+/*# sourceMappingURL=section1.css.map */

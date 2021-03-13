@@ -1,0 +1,80 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+
+.footer{
+  width: 100%;
+  height: 250px;
+  background-color: #444;
+  padding: $paddingTopBottom2;
+  color: $color1;
+
+  &__title{
+     text-align: center;
+     color: $color1;
+     font-size: 1.5rem;
+  }
+
+  &__p{
+      font-size: 12px;
+      text-align: center;
+      padding-top: 10px ;
+      
+  }
+
+  &__containerIcons{
+      width: 90%;
+      height: 70px;
+      margin: 20px auto;
+    //   border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  &__icon{
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+  }
+
+  &__derechos{
+      text-align: center;
+      font-size: 1rem;
+  }
+}
+
+//recuerda que no se repiten los estilos en las medias queries se aplican
+// los estilos en cascadas, se modifica cierta parte del codigo para cada dispositivo
+// media querie que se adapta a dispositivos Desktops y laptops
+
+@media screen and (min-width:500px){
+    .footer{
+
+        &__title{
+            text-align: center;
+            color: $color1;
+            font-size: 1.8rem;
+        }
+    
+        &__p{
+            font-size: 14px;
+            text-align: center;
+            padding-top: 10px ;
+            
+        }
+    
+        
+        
+        &__icon{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    
+        &__derechos{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}

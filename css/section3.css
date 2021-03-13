@@ -1,0 +1,281 @@
+.section3 {
+  width: 100%;
+  height: auto;
+}
+
+.subSection3 {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+.subSection3__banner {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(245, 207, 40, 0.993);
+  font-weight: bold;
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: 2px underline;
+}
+.subSection3__article {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subSection3__articleItem {
+  width: 90%;
+  height: 220px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px -2px 3px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+.subSection3__num {
+  font-size: 1.6rem;
+  margin-left: 15px;
+  margin-top: 15px;
+  color: rgba(245, 207, 40, 0.993);
+  font-weight: lighter;
+}
+.subSection3__title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  color: #444;
+  font-weight: bold;
+}
+.subSection3__parrafo {
+  width: 93%;
+  height: auto;
+  margin: auto;
+  color: #555;
+}
+.subSection3__fondo {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-image: url("../img/salsa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subSection3__fondo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+.subSection3__containerPerson {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+.subSection3__person {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+  transform: translateY(20px);
+  display: block;
+  margin: auto;
+  margin-right: auto;
+  background-image: url("../img/boss.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+}
+.subSection3__description {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+.subSection3__mensaje {
+  color: white;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+.subSection3__titleChef {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333;
+  padding: 5px 0;
+  margin-top: 25px;
+}
+.subSection3__titleChef .remarcar {
+  color: rgba(245, 207, 40, 0.993);
+}
+.subSection3__containerCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.subSection3__cardItem {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.subSection3__cardImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.subSection3__Chefs {
+  width: 99%;
+  height: 90px;
+  border: 2px solid rgba(245, 207, 40, 0.993);
+}
+.subSection3__chefName {
+  text-align: center;
+  font-size: 1.4rem;
+  text-decoration: 2px grey underline;
+  color: #444;
+}
+.subSection3__containerSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subSection3__socialChef {
+  width: 33px;
+  height: 33px;
+  margin: 13px;
+}
+
+@media screen and (min-width: 500px) {
+  .subSection3__article {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .subSection3__articleItem {
+    width: 33.33%;
+    height: 230px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px -2px 3px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  .subSection3__parrafo {
+    width: 89%;
+    height: auto;
+    margin: auto;
+    color: #555;
+  }
+  .subSection3__containerCard {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .subSection3__cardItem {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .subSection3__mensaje {
+    width: 75%;
+  }
+  .subSection3__description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .subSection3__banner {
+    font-size: 3.3rem;
+    height: 350px;
+  }
+  .subSection3__article {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .subSection3__articleItem {
+    width: 30%;
+    height: 230px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px -2px 3px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  .subSection3__num {
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgba(245, 207, 40, 0.993);
+  }
+  .subSection3__parrafo {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    color: #555;
+  }
+  .subSection3__mensaje {
+    color: white;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .subSection3__titleChef {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 5px 0;
+    margin-top: 45px;
+  }
+  .subSection3__titleChef .remarcar {
+    color: rgba(245, 207, 40, 0.993);
+  }
+  .subSection3__containerCard {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .subSection3__cardItem {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=section3.css.map */
