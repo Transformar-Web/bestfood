@@ -41,8 +41,8 @@
 .nav__title {
   color: #fccf08fd;
   margin: 20px;
-  font-size: 1.5rem;
-  font-family: "Alfa Slab One", cursive;
+  font-size: 1.7rem;
+  font-family: "Fredoka One", Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav__lista {
   width: 100%;
@@ -124,7 +124,7 @@
   font-weight: bold;
   font-size: 1.3rem;
   border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fccf08fd;
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -206,7 +206,7 @@
   .nav__title {
     color: rgba(245, 207, 40, 0.993);
     margin: 20px;
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .nav__btn--active {
     visibility: hidden;

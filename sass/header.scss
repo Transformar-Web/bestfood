@@ -55,8 +55,8 @@
     &__title{
         color: $color3;
         margin: $marginAll2;
-        font-size: 1.5rem;
-        font-family: 'Alfa Slab One', cursive;
+        font-size: 1.7rem;
+        font-family: 'Fredoka One', Verdana, Geneva, Tahoma, sans-serif;
     }
    // ..................................................
    // este es el menu como tal donde estan las secciones del sitio    
@@ -136,7 +136,7 @@
       font-weight: bold;
       font-size: 1.3rem;
       border-radius: 12px;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.4);
       color: $color3;
       font-family: $fuenteText;
   }
@@ -243,7 +243,7 @@
             &__title{
                 color: $color4;
                 margin: $marginAll2;
-                font-size: 1.7rem;
+                font-size: 2rem;
             }
 
             &__btn--active{
